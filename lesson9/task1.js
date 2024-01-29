@@ -2,18 +2,18 @@ const { default: axios } = require("axios")
 
 const comments  = async () => {
     let data;
-    const resp =  await axios.get("https://jsonplaceholder.typicode.com/comments/1").then(respon => {
-        data = respon.data
-    })
+    const resp =  await axios.get("https://jsonplaceholder.typicode.com/comments/1")
+        data = resp.data
+    
     return data
 }
 
 const posts  = async () => {
     let data;
 
-    const resp =  await axios.get("https://jsonplaceholder.typicode.com/posts/2").then(respon => {
-        data = respon.data
-    })
+    const resp =  await axios.get("https://jsonplaceholder.typicode.com/posts/2")
+        data = resp.data
+
     return data
 }
 
